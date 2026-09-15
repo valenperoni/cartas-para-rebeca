@@ -28,12 +28,12 @@ window.REBECA_LETTERS = [
     accent: "#b65b46"
   },
   {
-    when: "necesites un abrazo",
+    when: "quieras abrazarme",
     body: [
-      "Aquí puedes dejarle un abrazo hecho de palabras, de esos que llegan incluso desde lejos.",
-      "Añade tantos párrafos como necesites dentro de la lista body."
+      "Mi princesita, ahora quizás no estoy ahí para darte un abrazo, quizás queda poco para dártelo o terminaron los días de estar juntos, y siento no poder estar para dártelo. Nada más me gustaría a mí que hacerte compañía en los momentos que más lo necesitas. Sé que los abrazos te ayudan mucho a relajarte y bueno, me pone muy triste que no pueda ser. Ojalá esta carta no tengas que abrirla nunca, ojalá te sientas siempre con la fuerza necesaria para hacer lo que sea. Yo esté donde esté te mando todo mi amor y un abrazo enorme, te mando todas mis fuerzas y todo mi poder. ",
+      "No sé que ha podido pasar para que lo necesites, quizás algo malo o quizás simplemente lo necesitas, pero llámame y cuéntame, un abrazo no puedo darte pero sí mi compañía, aunque sea a distancia. Te amo Rebe, y cuando te vea te daré todos los abrazos del mundo, te lo prometo. Alégrate y disfruta el momento, te mando todo mi amor y todo mi cariño."
     ],
-    signoff: "Siempre cerca,\n[Tu nombre]",
+    signoff: "Te mando un abrazo y un besito, te amo,\n[Valen]",
     accent: "#a43a3f"
   },
   {
@@ -47,39 +47,21 @@ window.REBECA_LETTERS = [
     accent: "#4c466e"
   },
   {
-    when: "dudes de ti",
+    when: "estés contenta",
     body: [
-      "Aquí irá tu recordatorio de todo lo que admiras en ella y de todas las razones por las que puede confiar en sí misma.",
-      "Sustituye este texto por tu mensaje personal cuando lo tengas listo."
+      "Así es como me gusta que estés siempre mi vida. No siempre se puede y tampoco debes frustrate por ello, en la vida hay muchos altibajos, pero es importante siempre buscar el lado bueno de las cosas y no pensar en las malas. La mayoría de los probemas que uno se encuentra en su vida están en la mente, y tu eres fuerte de mente. Quiero que seas muy feliz, es mi objetivo en la vida. Quiero cumplir todos tus sueños y llevarte a todos lados, quiero que seas feliz a mi lado y que nunca te falte nada. Poco puedo decirte para este sentimiento que tienes, simplemente que me alegra que te sientas así y que estés leyendo esta carta, ojalá fuera la única que tengas que leer, pero si no lo es, siempre puedes volver a esta cuando te sientas aasí.",
+      "Estoy para todo lo que necesites, siempre, estoy en las buenas y mucho más en las malas. Se feliz siempre mi vida, no te mereces más que eso."
     ],
-    signoff: "Yo siempre creeré en ti,\n[Tu nombre]",
+    signoff: "Sonríe siempre porque así se define tu personalidad,\n[Valen]",
     accent: "#9d693d"
   },
   {
-    when: "quieras sonreír",
+    when: "tengas ganas de comer sushi",
     body: [
-      "Aquí puedes guardar una anécdota vuestra, una tontería que solo entendáis vosotros o tu forma favorita de hacerla sonreír.",
-      "La carta admite todo el texto que quieras añadir."
+      "Mira que eres Chancha eh. Estoy seguro de que es la carta que más veces a leer, casi una vez por día seguro. Ojalá poder vivir ahí contigo para ir todas las semanas a comer sushi mi chanchita. Sé que te encanta y que muchas veces te entra antojo. Cuando vuelvas iremos todas las veces que quieras, te lo prometo. De momento confórmate con ahorrar un poco y comer de vez en cuando JAJAJA. No seas tan tan chancha anda y deja de pensar en el sushi.",
+      "Si tienes muchas ganas ve a comprártelo chanchita, yo te hago un bizum. Usa esta carta como vale regalo para unas cajitas de sushi. No puedo acompañarte pero por lo menos te invito."
     ],
-    signoff: "Con una sonrisa para ti,\n[Tu nombre]",
+    signoff: "Para la chanchita devoradora de sushi,\n[Valen]",
     accent: "#c14e68"
-  },
-  {
-    when: "necesites recordar cuánto te quiero",
-    body: [
-      "Aquí irá una de esas cartas que merece ser releída muchas veces.",
-      "Escribe sin prisa: estas palabras estarán esperándola siempre que vuelva a necesitarlas."
-    ],
-    signoff: "Te quiero,\n[Tu nombre]",
-    accent: "#6d1738"
-  },
-  {
-    when: "quieras celebrar algo bonito",
-    body: [
-      "Aquí puedes celebrar sus logros, los momentos compartidos y todas las cosas buenas que todavía os esperan.",
-      "Cuando escribas el contenido definitivo, este texto de muestra desaparecerá."
-    ],
-    signoff: "Brindo por ti y por nosotros,\n[Tu nombre]",
-    accent: "#a66a2c"
   }
 ];
