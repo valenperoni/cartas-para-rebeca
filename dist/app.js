@@ -6,12 +6,9 @@
   const title = document.querySelector("#dialog-title");
   const body = document.querySelector("#dialog-body");
   const signoff = document.querySelector("#dialog-signoff");
-  const position = document.querySelector("#letter-position");
   const closeButton = document.querySelector("#dialog-close");
-  const previousButton = document.querySelector("#previous-letter");
-  const nextButton = document.querySelector("#next-letter");
+  const backButton = document.querySelector("#back-to-letters");
 
-  let currentIndex = 0;
   let lastTrigger = null;
   let closeTimer = null;
 
@@ -59,10 +56,8 @@
     const letter = letters[index];
     if (!letter) return;
 
-    currentIndex = index;
     title.textContent = letter.when;
     signoff.textContent = letter.signoff || "Con todo mi amor";
-    position.textContent = `Carta ${index + 1} de ${letters.length}`;
     paper.style.setProperty("--letter-accent", letter.accent || "#8e244b");
     body.replaceChildren();
 
@@ -99,16 +94,7 @@
   letters.forEach((letter, index) => grid.append(createCard(letter, index)));
 
   closeButton.addEventListener("click", closeLetter);
-  previousButton.addEventListener("click", () => {
-    const nextIndex = (currentIndex - 1 + letters.length) % letters.length;
-    renderLetter(nextIndex);
-    paper.scrollTop = 0;
-  });
-  nextButton.addEventListener("click", () => {
-    const nextIndex = (currentIndex + 1) % letters.length;
-    renderLetter(nextIndex);
-    paper.scrollTop = 0;
-  });
+  backButton.addEventListener("click", closeLetter);
 
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) closeLetter();
