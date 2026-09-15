@@ -1,0 +1,6 @@
+.sites-runtime/
+*.zip
+*.tar.gz
+
+# Las fotografías originales se conservan fuera del paquete publicado.
+/*.jpeg

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cartas de amor y compañía para Rebeca, para abrir justo cuando las necesite."
+    />
+    <meta name="theme-color" content="#3a0d21" />
+    <title>Mis cartas de amor y compañía para Rebeca</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%236d1738'/%3E%3Cpath d='M13 20h38v26H13z' fill='%23f8ead9'/%3E%3Cpath d='m13 21 19 15 19-15' fill='none' stroke='%239b3155' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M32 29c-5-6-12 2 0 10 12-8 5-16 0-10Z' fill='%23b84668'/%3E%3C/svg%3E"
+    />
+    <link rel="preload" as="image" href="assets/sunset.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="letters.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#cartas">Ir directamente a las cartas</a>
+
+    <header class="hero" id="inicio">
+      <div class="hero__backdrop" aria-hidden="true">
+        <img
+          class="hero__backdrop-image"
+          src="assets/sunset.jpeg"
+          alt=""
+          width="900"
+          height="1600"
+          fetchpriority="high"
+        />
+        <div class="hero__veil"></div>
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+      </div>
+
+      <div class="memory memory--mirror" aria-hidden="true">
+        <span class="memory__tape"></span>
+        <img src="assets/mirror.jpeg" alt="" width="735" height="1288" />
+      </div>
+      <div class="memory memory--kiss" aria-hidden="true">
+        <span class="memory__tape"></span>
+        <img src="assets/kiss.jpeg" alt="" width="1600" height="1200" />
+      </div>
+      <div class="memory memory--celebration" aria-hidden="true">
+        <span class="memory__tape"></span>
+        <img src="assets/celebration.jpeg" alt="" width="1200" height="1600" />
+      </div>
+
+      <nav class="hero__nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Volver a la portada">
+          <span class="brand__seal" aria-hidden="true">R</span>
+          <span>Para Rebeca</span>
+        </a>
+        <a class="nav-link" href="#cartas">Tus cartas <span aria-hidden="true">↓</span></a>
+      </nav>
+
+      <div class="hero__content">
+        <p class="eyebrow"><span></span> Para cuando me necesites <span></span></p>
+        <h1>
+          Mis cartas
+          <em>de amor y compañía</em>
+          para Rebeca
+        </h1>
+        <p class="hero__intro">
+          Hay palabras que merecen esperarte justo en el momento en que más las necesites.
+        </p>
+        <a class="primary-button" href="#cartas">
+          <span class="button-envelope" aria-hidden="true"></span>
+          Descubrir tus cartas
+        </a>
+      </div>
+
+      <div class="hero__footnote" aria-hidden="true">
+        <span>Con todo mi amor</span>
+        <i></i>
+        <span>Siempre cerca de ti</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="letters-section" id="cartas" aria-labelledby="letters-title">
+        <div class="letters-ambient" aria-hidden="true">
+          <img class="ambient-photo ambient-photo--one" src="assets/date-night.jpeg" alt="" width="900" height="1600" loading="lazy" />
+          <img class="ambient-photo ambient-photo--two" src="assets/cinema.jpeg" alt="" width="1200" height="1600" loading="lazy" />
+          <img class="ambient-photo ambient-photo--three" src="assets/playful.jpeg" alt="" width="738" height="1187" loading="lazy" />
+          <img class="ambient-photo ambient-photo--four" src="assets/christmas.jpeg" alt="" width="636" height="1137" loading="lazy" />
+        </div>
+
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-number">01 · Tus cartas</p>
+            <div>
+              <h2 id="letters-title">¿Qué necesitas sentir hoy?</h2>
+              <p>Elige un sobre. Cada uno fue pensado para acompañarte de una forma distinta.</p>
+            </div>
+          </div>
+
+          <div class="letters-grid" id="letters-grid" aria-live="polite"></div>
+
+          <p class="letters-note">
+            <span aria-hidden="true">✦</span>
+            No hay un orden correcto. Abre la que te encuentre hoy.
+            <span aria-hidden="true">✦</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="closing" aria-label="Un último mensaje">
+        <img
+          class="closing__image"
+          src="assets/christmas.jpeg"
+          alt=""
+          width="636"
+          height="1137"
+          loading="lazy"
+        />
+        <div class="closing__overlay"></div>
+        <div class="closing__content">
+          <span class="closing__heart" aria-hidden="true">♥</span>
+          <blockquote>Donde no llegue mi abrazo,<br />que llegue una de estas cartas.</blockquote>
+          <p>Para ti, siempre.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--dark" href="#inicio">
+        <span class="brand__seal" aria-hidden="true">R</span>
+        <span>Para Rebeca</span>
+      </a>
+      <p>Hecho con amor, para acompañarte.</p>
+    </footer>
+
+    <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-shell">
+        <button class="dialog-close" id="dialog-close" type="button" aria-label="Cerrar la carta">
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="opened-envelope" aria-hidden="true">
+          <div class="opened-envelope__back"></div>
+          <div class="opened-envelope__flap"></div>
+          <div class="opened-envelope__front"></div>
+        </div>
+
+        <article class="letter-paper" id="letter-paper" tabindex="-1">
+          <header class="letter-paper__header">
+            <p>Ábrela cuando...</p>
+            <h2 id="dialog-title"></h2>
+            <div class="letter-paper__ornament" aria-hidden="true"><span>♥</span></div>
+          </header>
+          <div class="letter-paper__body" id="dialog-body"></div>
+          <p class="letter-paper__signoff" id="dialog-signoff"></p>
+        </article>
+
+        <div class="dialog-navigation">
+          <button id="previous-letter" type="button" aria-label="Abrir la carta anterior">
+            <span aria-hidden="true">←</span> Anterior
+          </button>
+          <p id="letter-position" aria-live="polite"></p>
+          <button id="next-letter" type="button" aria-label="Abrir la carta siguiente">
+            Siguiente <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
