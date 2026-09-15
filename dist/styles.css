@@ -776,15 +776,6 @@ a {
   text-shadow: 0 4px 30px rgba(20, 0, 9, 0.45);
 }
 
-.closing__content p {
-  margin: 1.8rem 0 0;
-  color: rgba(255, 248, 239, 0.68);
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-style: italic;
-  letter-spacing: 0.06em;
-}
-
 .site-footer {
   min-height: 8.5rem;
   padding: 2rem max(1.5rem, calc((100% - 1160px) / 2));
