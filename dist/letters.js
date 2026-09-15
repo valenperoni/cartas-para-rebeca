@@ -10,21 +10,21 @@
 
 window.REBECA_LETTERS = [
   {
-    when: "me eches de menos",
+    when: "me extrañes",
     body: [
-      "Aquí irá tu carta para cuando Rebeca te eche de menos.",
-      "Puedes sustituir estos párrafos por tus propias palabras y escribir todo lo que quieras contarle."
+      "Yo también te extraño mi vida, no te imaginas cuánto. Desde que no estás los días se pasan más lento. Tengo tiempo para hacer otras cosas, pero extraño hacerlas contigo. Extraño mucho dormir contigo, que me cocines, mirar pelis o incluso no hacer nada. Eres una parte muy grande de mi vida y no quiero que cambie nunca. Pero, aunque sea difícil extrañarnos, hay que saber disfrutar y valorar los momentos. Quizás dentro de un año no nos pase esto porque estemos viviendo los dos juntos en Lund. Sé que para ti las noches son complicadas, a veces los días también, pero en el corazón siempre me vas a tener a tu lado. No tenerte cerca me ha hecho confirmar que mi vida la quiero pasar contigo. Cada día valoro más lo que es tenerte cerca, y no es que antes no lo hiciera, es que el no tú cerca de mí es un vacío muy grande. Lo es porque me alegras los días (aunque a veces depende de si tenemos chanchita malhumorada o no) y porque se que siempre tengo a alguien con quien poder hacer planes, alguien que amo con todo mi corazón y que siento que es mi compañera de vida. Puedo hacer cualquier plan contigo, y que tengas esa energía que tienes tú ayuda mucho. ",
+      "Por eso, aunque ahora no estemos cerca, quédate con estas palabras que te digo sobre lo que significa que estés cerca de mí. Pasarán los años y cambiarán muchas cosas en nuestras vidas, pero espero que esto nunca. Es muy importante encontrar en la vida una persona con la que puedas compartir todo: juegos, sentimientos, noches de peli, paseos, abrazos… Y yo, por suerte, encontré la mía desde joven. Quiero estar siempre a tu lado, aunque por momentos no sea físicamente, espero que sí espiritualmente. Te extraño y te amo, gracias por ser mi Rebeca."
     ],
-    signoff: "Con todo mi amor,\n[Tu nombre]",
+    signoff: "Con todo mi amor,\n[Valen]",
     accent: "#8e244b"
   },
   {
-    when: "tengas un día difícil",
+    when: "te sientas sola",
     body: [
-      "Aquí irá tu carta para uno de esos días en los que todo pesa un poco más.",
-      "Este papel crecerá automáticamente si escribes una carta más larga."
+      "Mi Chanchitaaaaaaaa, nunca vas a estar sola. Se que a veces es difícil no tener a tu familia y tus amigos de siempre, pero esto es parte de la experiencia. Conocerás gente, y bueno ya la estás conociendo, pero recuerda siempre que pase lo que pase aquí tienes una casa, con gente que te quiere mucho y que está esperando a que vuelvas. Son procesos que uno pasa cuando se muda a otro país. Pero recuerda: sabes perfectamente la persona que eres. Sabes el gran corazón que tienes y tus buenas intenciones. Si alguien no quiere compartir tiempo contigo, problema suyo es. Tienes que también aprovechar a hacer tus cosas sola, que se que lo haces, pero eso también te hace madurar. Estás creciendo y convirtiéndote en adulta y son procesos difíciles, pero siempre vas a tener a alguien a tu lado, ya sea tu familia o yo.",
+      "Cuando estés triste por sentirte sola llámame, da igual la hora, da igual el momento. Siempre voy a estar para lo que necesites y para hacerte compañía. Recuerda siempre que estoy para lo que sea, pase lo que pase."
     ],
-    signoff: "Estoy contigo,\n[Tu nombre]",
+    signoff: "Estoy contigo siempre mi vida,\nValen",
     accent: "#b65b46"
   },
   {
@@ -39,10 +39,11 @@ window.REBECA_LETTERS = [
   {
     when: "no puedas dormir",
     body: [
-      "Aquí irá tu carta para acompañarla durante una noche en la que el sueño tarde en llegar.",
-      "Puedes convertirla en un recuerdo, una historia o simplemente unas palabras tranquilas."
+      "Se hace difícil dormir sin la chanchita, y más se hará cuando llegue el frío. Dormir contigo es lo mejor que existe porque se combinan las dos cosas que más me gustan, dormir y mi Chanchita. Cuando no puedas dormir respira hondo, piensa en cosas bonitas, relaja el cuerpo, intenta sentir cada parte de tu cuerpo. No estoy físicamente pero yo te acompaño cada noche. Cuando uno se acostumbra a dormir con alguien después se hace raro, pero no te preocupes, es cosa de unos meses, ojalá pronto podamos compartir una casa y decorarla a nuestra manera, pensar a futuro y comenzar una vida, y quien sabe, quizás también con un gatito.",
+      "Mientras tanto dormiremos juntos mientras podamos, y aunque ahora no se pueda, ten paciencia. Cuando no quieras darte cuenta, vamos a tener nuestra propia cama de verdad. Cierra los ojitos y descansa, recuérdame aunque no esté y piensa en cosas lindas.",
+      "Pd: también puedes llamarme, aunque sea muy tarde, estoy siempre para ti para lo que sea cuando sea."
     ],
-    signoff: "Hasta mañana, mi amor,\n[Tu nombre]",
+    signoff: "Buenas noches mi princesita,\n[Valen]",
     accent: "#4c466e"
   },
   {
