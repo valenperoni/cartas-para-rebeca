@@ -125,3 +125,97 @@
   );
   observer.observe(grid);
 })();
+
+(() => {
+  const hero = document.querySelector(".hero");
+  if (!hero) return;
+
+  const layer = document.createElement("div");
+  layer.className = "heart-balloons";
+  layer.setAttribute("aria-label", "Globos de corazón interactivos");
+
+  const status = document.createElement("p");
+  status.className = "visually-hidden";
+  status.setAttribute("role", "status");
+  status.setAttribute("aria-live", "polite");
+  layer.append(status);
+  hero.append(layer);
+
+  const isCompact = window.matchMedia("(max-width: 700px)").matches;
+  const slots = isCompact ? [4, 12, 88, 96] : [4, 11, 18, 82, 89, 96];
+  const colors = ["#f06b83", "#df4568", "#bd2854", "#e85a75", "#a91f4b", "#ce365d"];
+
+  function addBurstParticles(balloon) {
+    const particleCount = 10;
+
+    for (let index = 0; index < particleCount; index += 1) {
+      const particle = document.createElement("span");
+      const angle = (Math.PI * 2 * index) / particleCount + Math.random() * 0.28;
+      const distance = 34 + Math.random() * 34;
+
+      particle.className = "heart-balloon__particle";
+      particle.setAttribute("aria-hidden", "true");
+      particle.style.setProperty("--particle-x", `${Math.cos(angle) * distance}px`);
+      particle.style.setProperty("--particle-y", `${Math.sin(angle) * distance}px`);
+      particle.style.setProperty("--particle-delay", `${Math.random() * 70}ms`);
+      balloon.append(particle);
+    }
+  }
+
+  function createBalloon(slotIndex) {
+    const balloon = document.createElement("button");
+    const heart = document.createElement("span");
+    const string = document.createElement("span");
+    const duration = 17 + Math.random() * 8;
+    const size = (isCompact ? 2.8 : 3.1) + Math.random() * (isCompact ? 1.15 : 1.65);
+
+    balloon.className = "heart-balloon";
+    balloon.type = "button";
+    balloon.dataset.slot = String(slotIndex);
+    balloon.setAttribute("aria-label", "Explotar globo de corazón");
+    balloon.title = "¡Pínchame!";
+    balloon.style.setProperty("--balloon-x", `${slots[slotIndex]}%`);
+    balloon.style.setProperty("--balloon-rest-y", `${12 + Math.random() * 72}vh`);
+    balloon.style.setProperty("--balloon-size", `${size}rem`);
+    balloon.style.setProperty("--balloon-color", colors[slotIndex % colors.length]);
+    balloon.style.setProperty("--float-duration", `${duration}s`);
+    balloon.style.setProperty("--float-delay", `${-Math.random() * duration}s`);
+    balloon.style.setProperty("--sway-delay", `${-Math.random() * 4}s`);
+
+    heart.className = "heart-balloon__heart";
+    heart.setAttribute("aria-hidden", "true");
+    heart.textContent = "♥";
+
+    string.className = "heart-balloon__string";
+    string.setAttribute("aria-hidden", "true");
+    balloon.append(heart, string);
+
+    balloon.addEventListener("click", (event) => {
+      if (balloon.classList.contains("is-popping")) return;
+
+      const usedKeyboard = event.detail === 0;
+      balloon.classList.add("is-popping");
+      balloon.setAttribute("aria-label", "Globo explotado");
+      addBurstParticles(balloon);
+      status.textContent = "";
+      requestAnimationFrame(() => {
+        status.textContent = "¡Pum! Has explotado un globo de corazón.";
+      });
+
+      window.setTimeout(() => {
+        const nextBalloon = layer.querySelector(".heart-balloon:not(.is-popping)");
+        balloon.remove();
+
+        if (usedKeyboard) {
+          (nextBalloon || document.querySelector(".primary-button"))?.focus({ preventScroll: true });
+        }
+
+        window.setTimeout(() => createBalloon(slotIndex), 900 + Math.random() * 900);
+      }, 620);
+    });
+
+    layer.append(balloon);
+  }
+
+  slots.forEach((_, index) => createBalloon(index));
+})();
